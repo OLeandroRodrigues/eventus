@@ -1,3 +1,5 @@
+package io.github.oleandrorodrigues.eventus.retry;
+
 import java.time.Duration;
 
 public interface RetryPolicy {
