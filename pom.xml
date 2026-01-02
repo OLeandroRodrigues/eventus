@@ -15,6 +15,7 @@
   <modules>
     <module>eventus-core</module>
     <module>eventus-examples</module>
+    <module>eventus-transport-inmemory</module>
   </modules>
 
   <properties>

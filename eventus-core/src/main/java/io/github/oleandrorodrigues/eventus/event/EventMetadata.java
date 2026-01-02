@@ -1,3 +1,5 @@
+package io.github.oleandrorodrigues.eventus.event;
+
 import java.util.Map;
 
 public record EventMetadata(
