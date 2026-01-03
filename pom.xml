@@ -16,11 +16,24 @@
     <module>eventus-core</module>
     <module>eventus-examples</module>
     <module>eventus-transport-inmemory</module>
+    <module>eventus-transport-rabbitmq</module>
   </modules>
 
   <properties>
     <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit.jupiter.version>5.10.2</junit.jupiter.version>
   </properties>
+  
+  <dependencyManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</dependencyManagement>
 
 </project>
