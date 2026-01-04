@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.github.oleandrorodrigues</groupId>
+    <artifactId>eventus</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>eventus-transport-rabbitmq</artifactId>
+  <name>Eventus RabbitMQ Transport</name>
+  <description>RabbitMQ transport implementation for Eventus (publisher/consumer/topology).</description>
+  <packaging>jar</packaging>
+
+  <dependencies>
+
+    <!-- Eventus Core -->
+    <dependency>
+      <groupId>io.github.oleandrorodrigues</groupId>
+      <artifactId>eventus-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- RabbitMQ Java Client -->
+    <dependency>
+      <groupId>com.rabbitmq</groupId>
+      <artifactId>amqp-client</artifactId>
+      <version>5.20.0</version>
+    </dependency>
+    
+    <!-- Jackson-datatype -->
+    <dependency>
+  		<groupId>com.fasterxml.jackson.datatype</groupId>
+  		<artifactId>jackson-datatype-jsr310</artifactId>
+  	<version>2.17.1</version>
+</dependency>
+
+  </dependencies>
+
+</project>

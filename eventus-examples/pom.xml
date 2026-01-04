@@ -28,6 +28,16 @@
         <artifactId>eventus-transport-inmemory</artifactId>
         <version>${project.version}</version>
     </dependency>
+    <dependency>
+        <groupId>io.github.oleandrorodrigues</groupId>
+        <artifactId>eventus-transport-rabbitmq</artifactId>
+        <version>${project.version}</version>
+    </dependency>
+    <dependency>
+  <groupId>org.slf4j</groupId>
+  <artifactId>slf4j-simple</artifactId>
+  <version>2.0.13</version>
+</dependency>
   </dependencies>
 
   <build>
