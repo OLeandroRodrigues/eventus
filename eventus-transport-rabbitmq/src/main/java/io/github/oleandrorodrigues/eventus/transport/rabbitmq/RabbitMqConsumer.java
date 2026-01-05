@@ -31,7 +31,7 @@ public final class RabbitMqConsumer {
                 cfg,
                 deserializer,
                 publisher,
-                (RabbitMqEventBus) localDispatcher, // safe cast (no seu caso)
+                (RabbitMqEventBus) localDispatcher, 
                 retryPolicy
         );
     }
@@ -86,7 +86,7 @@ public final class RabbitMqConsumer {
                             publisher.publishRetry(envelope, attempt + 1, retryQueue);
                             channel.basicAck(deliveryTag, false);
                         } catch (Exception publishEx) {
-                            // temporary failure → requeue original
+                            // temporary failure → required iriginal 
                             channel.basicNack(deliveryTag, false, true);
                         }
                     } else {
